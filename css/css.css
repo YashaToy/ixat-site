@@ -26,13 +26,8 @@ body{
 .banner{
     height: 677px;
     width: 100%;
-}
-.img-banner{
-    height: 100%;
-    width: 100%;
-    background: 
-        url('../img/people.png') 0 -70px no-repeat,
-        url('../img/bg.png') 0 -90px;
+    background: url('../img/banner.png') center 0;
+    background-size: cover;
 }
 .mass-media{
     height: 118px;
@@ -56,7 +51,7 @@ body{
 }
 .driver{
     height: 362px;
-    background: url('../img/driver.png') no-repeat;
+    background: #fecf42 url('../img/driver.png') no-repeat;
     background-position: center;
     color: #efefef;
     font-family: Roboto;
@@ -154,6 +149,7 @@ span p{
 }
 .download{
     width: max-content;
+    min-width: 400px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -337,17 +333,17 @@ nav{
     margin-top: 50px;
 }
 
-.s1 .swiper-slide:nth-child(4) .slider-text{
+.s1 .swiper-slide .last .slider-text{
     max-width: 370px;
     margin-top: 110px;
 }
-.s1 .swiper-slide:nth-child(4) .slider-text p:first-child{
+.s1 .swiper-slide .last .slider-text p:first-child{
     margin-bottom: 25px;
 }
-.s1 .swiper-slide:nth-child(4) .slider-img p:first-child{
+.s1 .swiper-slide .last .slider-img p:first-child{
     margin-bottom: 80px;
 }
-.s1 .swiper-slide:nth-child(4) .slider-img{
+.s1 .swiper-slide .last .slider-img{
     margin-top: 95px;
 }
 
@@ -404,6 +400,7 @@ nav{
     }
     .download{
         width: 100%;
+        min-width: 0;
         flex-direction: column;
         margin: 0;
     }
